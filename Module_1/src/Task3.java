@@ -8,7 +8,7 @@ public class Task3 {
     public Task3(){
         idTracker ++;
         this.id = idTracker;
-        this.startTime = System.currentTimeMillis();
+        this.startTime = System.nanoTime();
 
     }
 
@@ -20,7 +20,7 @@ public class Task3 {
         this.id  = id;
     }
     public void setEndTime(){
-        this.endTime = System.currentTimeMillis();
+        this.endTime = System.nanoTime();
     }
 
     public long getTimeSpent(){
