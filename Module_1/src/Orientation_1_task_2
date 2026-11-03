@@ -1,0 +1,32 @@
+2.)  Take a real-world operational system that can be observed (bank, supermarket)
+and identify the elements associated with it in terms of variability, complexity,
+interconnectedness.
+
+
+Lets follow the supermarket example as that is my favorite.
+
+Variability
+- As we know it is impossible to predict how many customers will come into a store at any given time.
+It is even more difficult to predict how many people who enter the store and actually buy something.
+Profitable customers and people who are hanging out are two separate categories of people that enter stores.
+Then, we have to think about how many people will go to each cashier lane. This can vary depending on a variety of factories such as
+preference of a particular cashier, cashier speed, whether the cashier lane is limited to a certain amount of items, etc.
+
+Complexity
+- Combinatorial complexity
+-- Supermarkets consist of many different parts such as suppliers, employees, customers,
+ management, supply and demand, infrastructure, economics.
+
+-Dynamic Complexity
+-- Well we know that this is based on cause and effect. To me, this seems to work very closely with
+and mimics supply and demand because if even one part of the system is moving faster,
+ is demanding more, and is out of sync with other parts then the whole system will face change.
+ An example of this with the supermarket is ordering stock. During Covid-19 the supermarket I worked at
+ faced supply issues because the demand outweighed the supply that was in stock and suppliers faced a bottleneck
+ in distribution which led to customer dissatisfaction and a loss in profit. Now this was a drastic and very unprecedented example,
+ but I think it proves the point of the complexity and interconnectedness of the system.
+
+
+ Interconnectedness
+ Interconnectedness goes hand in hand with dynamic complexity because as mentioned previously the system depends
+ on all parts working together and if one part is missing then the whole thing will be affected.
