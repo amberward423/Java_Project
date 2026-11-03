@@ -5,12 +5,20 @@ public class Task3 {
     private long endTime;
     private static int idTracker;
 
-
-    public Task3(int id){
-        this.id = id;
+    public Task3(){
+        idTracker ++;
+        this.id = idTracker;
         this.startTime = System.currentTimeMillis();
+
     }
 
+    public void setStartTime(long startTime){
+        this.startTime = startTime;
+
+    }
+    public void setId(int id){
+        this.id  = id;
+    }
     public void setEndTime(){
         this.endTime = System.currentTimeMillis();
     }
@@ -30,6 +38,7 @@ public class Task3 {
     public long getEndTime(){
         return endTime;
     }
+
 
 
 }
