@@ -1,4 +1,5 @@
 public class Event implements Comparable<Event> {
+
     private int eventTime;
 
     public Event(int eventTime){
@@ -15,5 +16,9 @@ public class Event implements Comparable<Event> {
             return -1;
         }
     }
+    public String toString(){
+        return String.valueOf(eventTime);
+    }
+
 
 }
