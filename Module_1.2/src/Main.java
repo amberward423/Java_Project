@@ -5,9 +5,9 @@ public class Main {
 
         EventList eventList = new EventList();
 
-        eventList.addEvent(new Event(20));
-        eventList.addEvent(new Event(80));
-        eventList.addEvent(new Event(67));
+        eventList.addEvent(new Event(20,EventType.ARRIVAL));
+        eventList.addEvent(new Event(80,EventType.EXIT));
+        eventList.addEvent(new Event(67,EventType.ARRIVAL));
 
         Event event1 = eventList.getNextEvent();
         System.out.println(event1);

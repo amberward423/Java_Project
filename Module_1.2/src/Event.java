@@ -1,9 +1,11 @@
 public class Event implements Comparable<Event> {
 
     private int eventTime;
+    private EventType eventType;
 
-    public Event(int eventTime){
+    public Event(int eventTime, EventType eventType){
         this.eventTime = eventTime;
+        this.eventType = eventType;
     }
 
     public int compareTo(Event otherEvent){
@@ -17,7 +19,7 @@ public class Event implements Comparable<Event> {
         }
     }
     public String toString(){
-        return String.valueOf(eventTime);
+        return String.valueOf(eventTime) +  eventType;
     }
 
 
