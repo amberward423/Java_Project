@@ -1,0 +1,59 @@
+Telephone call centre example: hand simulation submission
+
+Event list:
+
+Event	Time
+B4	     16
+B3	     16
+B5	     18
+B2	     20
+
+
+B1 is the first type X and B2 is the first type Y event.
+Both were scheduled at time 5 and 10 respectively.
+B3 is where X1 moves to operator 1 (which is scheduled at time 6)
+This call will be finished at time 10.
+
+clock 10
+B2 (the first Y customer arrives)
+B1 (type x customer 2 arrives)
+B4 (x1 finished services)
+
+due to FIFO and the fact that B2 entered first before the incoming B1 (X2) event Y1 moves to processing
+it will take one minute to process so clock is 11
+
+at clock 10 X call count goes to 1
+
+clock 11
+-Y1 goes to service with operator 2 (takes 7 minutes from here)
+-X2 goes to process after exiting router
+
+clock 12
+- X2 finishes processing and moves to operator 1 for servicing (takes 4 minutes)
+
+there is a jump because the next event is at clock 15
+this is where we left off
+clock 15
+
+B1 - customer X3 arrives and begins processing
+
+clock 16
+- X2 finishes phone call
+- X3 finishes processing moves to op 1
+- X completed another phone call (making call count 2)
+- Operator 1 becomes Idle and then begins serving X3
+
+our event list now is
+Event	Time
+B5	     18 (Y1 customer)
+B2	     20
+B4	     20
+
+clock 18
+B5 has finished service and Y1 leaves, boosting Y phone call count to 1.
+
+X completed calls: 2
+
+Y completed calls: 1
+
+Y1 has exited the system.
