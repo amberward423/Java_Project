@@ -26,20 +26,27 @@ public class task_2 {
             }
             System.out.println("The cumulative probability is: " + ageDistribution[3][i]);
         }
-        double random = (double)(Math.random());
-        System.out.println(random);
-        int age;
-        int [] ages
-                new int[1000];
-
-        for(int i = 0;i < ageDistribution[3].length; i++){
-            if(random <= ageDistribution[3][i] ){
-                 age = (int) ageDistribution[0][i];
-                 break;
-
+        int age=19;
+        int [] ages = new int[1000];
+        for(int j = 0 ; j < ages.length; j++) {
+            double random = (double)(Math.random());
+            for (int i = 0; i < ageDistribution[3].length; i++) {
+                if (random <= ageDistribution[3][i]) {
+                    age = (int) ageDistribution[0][i];
+                    break;
+                }
+            }
+            ages[j] = age;
+        }
+        int [] ageCounts = new int[7];
+        for (int i = 0; i < ageDistribution[0].length; i++){
+            for (int j = 0; j < ages.length; j++){
+                if(ageDistribution[0][i] == ages[j]){
+                    ageCounts[i]++;
+                }
 
             }
+            System.out.println("Age: "+ ageDistribution[0][i]+ " appears " + ageCounts[i] + " times.");
         }
-
     }
 }
