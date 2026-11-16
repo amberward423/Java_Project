@@ -9,6 +9,7 @@ public class Main {
 
         Clock clock2 =  Clock.getInstance();
 
+        System.out.println(clock == clock2);
 
     }
 }
