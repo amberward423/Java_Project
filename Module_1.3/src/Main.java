@@ -1,6 +1,3 @@
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Clock clock =  Clock.getInstance();
@@ -10,6 +7,14 @@ public class Main {
         Clock clock2 =  Clock.getInstance();
 
         System.out.println(clock == clock2);
+
+        EventList eventlist = new EventList();
+        ArrivalProcess arrivalProcess = new ArrivalProcess(EventType.ARRIVAL);
+
+        for(int i = 0; i < 10; i++ ){
+                arrivalProcess.generateNextArrival(eventlist);
+        }
+        eventlist.displayEvents();
 
     }
 }
