@@ -17,8 +17,6 @@ public class ServicePoint {
        return timeinside;
     }
 
-    public boolean isEmpty(){
-        return customers.isEmpty();
-    }
+
 
 }
