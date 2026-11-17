@@ -16,4 +16,12 @@ public class EventList {
         }
 
     }
+    public Event getNextEvent(){
+        return eventList.remove(0);
+    }
+
+    public boolean isEmpty(){
+        return eventList.isEmpty();
+    }
+
 }
